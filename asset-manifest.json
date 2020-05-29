@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/tristinbarnett/week19employeeTracker/static/css/main.5f361e03.chunk.css",
+    "main.js": "/tristinbarnett/week19employeeTracker/static/js/main.864840ee.chunk.js",
+    "main.js.map": "/tristinbarnett/week19employeeTracker/static/js/main.864840ee.chunk.js.map",
+    "runtime-main.js": "/tristinbarnett/week19employeeTracker/static/js/runtime-main.49d6ea6f.js",
+    "runtime-main.js.map": "/tristinbarnett/week19employeeTracker/static/js/runtime-main.49d6ea6f.js.map",
+    "static/js/2.f436039f.chunk.js": "/tristinbarnett/week19employeeTracker/static/js/2.f436039f.chunk.js",
+    "static/js/2.f436039f.chunk.js.map": "/tristinbarnett/week19employeeTracker/static/js/2.f436039f.chunk.js.map",
+    "index.html": "/tristinbarnett/week19employeeTracker/index.html",
+    "precache-manifest.5a13cc45d1b4d65101b5ac835489d93e.js": "/tristinbarnett/week19employeeTracker/precache-manifest.5a13cc45d1b4d65101b5ac835489d93e.js",
+    "service-worker.js": "/tristinbarnett/week19employeeTracker/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/tristinbarnett/week19employeeTracker/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.f436039f.chunk.js.LICENSE.txt": "/tristinbarnett/week19employeeTracker/static/js/2.f436039f.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/tristinbarnett/week19employeeTracker/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.49d6ea6f.js",
+    "static/js/2.f436039f.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.864840ee.chunk.js"
+  ]
+}
