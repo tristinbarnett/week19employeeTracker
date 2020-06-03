@@ -3,46 +3,77 @@ import Search from "../components/Search";
 import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 import Table from "../components/Table";
+import _ from 'lodash';
 
 
 class Home extends Component {
     state = {
         search: "",
-        results: [],
-        error: ""
+        initResults: [],
+        filteredResults: [],
+        error: "",
+        asc: true
     };
 
     componentDidMount() {
         API.getEmployees()
-            .then(res => this.setState({ results: res.data.message }))
+            .then(res =>{
+                console.log("component did mount", res.data.results);
+                this.setState({
+                    initResults: res.data.results,
+                    filteredResults: res.data.results
+                })
+            })
             .catch(err => console.log(err));
+            
     }
 
     handleInputChange = event => {
         this.setState({ search: event.target.value });
-    };
+        // const newResults = this.state.filteredResults.filter(item => item.name.last=this.state.search);
+        // this.setState({filteredResults:newResults})
 
+    };
     handleFormSubmit = event => {
         event.preventDefault();
-        API.getEmployees(this.state.search)
-            .then(res => {
-                if (res.data.status === "error") {
-                    throw new Error(res.data.message);
-                }
-                this.setState({ results: res.data.message, error: "" });
-            })
-            .catch(err => this.setState({ error: err.message }));
-    };
+        
+        const newResults = this.state.filteredResults.filter(item => item.name.last.toLowerCase()===this.state.search.toLowerCase());
+        if(this.state.search !== ""){
+            this.setState({filteredResults:newResults})
+        }else {
+            console.log("handle form submit", this.state.initResults);
+            this.setState({filteredResults:this.state.initResults})
+        }
+        
+    }
 
+    sortResults = () => {
+        const oldResults = this.state.filteredResults;
+        const isAsc = this.state.asc;
+        console.log("help me");
+        const newResults = _.sortBy(oldResults, [function (res) {
+            return res.name.last;
+        }]);
+        if (!isAsc) {
+            _.reverse(newResults);
+        }
+        this.setState({
+            filteredResults: newResults,
+            asc: false
+        })
+
+    }
     render() {
         return (
             <div>
                 <Jumbotron />
-                <Search />
-                <Table
-                    handleFormSubmit={this.handleFormSubmit}
+                <Search 
                     handleInputChange={this.handleInputChange}
-                    results={this.state.results}
+                    handleFormSubmit={this.handleFormSubmit}
+                />
+                <Table
+                    results={this.state.filteredResults}
+                    sortResults={this.sortResults}
                 />
             </div>
         );
