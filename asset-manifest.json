@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/tristinbarnett/week19employeeTracker/static/css/main.20854d68.chunk.css",
-    "main.js": "/tristinbarnett/week19employeeTracker/static/js/main.fd280a25.chunk.js",
-    "main.js.map": "/tristinbarnett/week19employeeTracker/static/js/main.fd280a25.chunk.js.map",
-    "runtime-main.js": "/tristinbarnett/week19employeeTracker/static/js/runtime-main.49d6ea6f.js",
-    "runtime-main.js.map": "/tristinbarnett/week19employeeTracker/static/js/runtime-main.49d6ea6f.js.map",
-    "static/js/2.430cd1e1.chunk.js": "/tristinbarnett/week19employeeTracker/static/js/2.430cd1e1.chunk.js",
-    "static/js/2.430cd1e1.chunk.js.map": "/tristinbarnett/week19employeeTracker/static/js/2.430cd1e1.chunk.js.map",
-    "index.html": "/tristinbarnett/week19employeeTracker/index.html",
-    "precache-manifest.581897ca6b7c3604615c7361e16c7f42.js": "/tristinbarnett/week19employeeTracker/precache-manifest.581897ca6b7c3604615c7361e16c7f42.js",
-    "service-worker.js": "/tristinbarnett/week19employeeTracker/service-worker.js",
-    "static/css/main.20854d68.chunk.css.map": "/tristinbarnett/week19employeeTracker/static/css/main.20854d68.chunk.css.map",
-    "static/js/2.430cd1e1.chunk.js.LICENSE.txt": "/tristinbarnett/week19employeeTracker/static/js/2.430cd1e1.chunk.js.LICENSE.txt"
+    "main.css": "/week19employeeTracker/static/css/main.20854d68.chunk.css",
+    "main.js": "/week19employeeTracker/static/js/main.fd280a25.chunk.js",
+    "main.js.map": "/week19employeeTracker/static/js/main.fd280a25.chunk.js.map",
+    "runtime-main.js": "/week19employeeTracker/static/js/runtime-main.9bc9efae.js",
+    "runtime-main.js.map": "/week19employeeTracker/static/js/runtime-main.9bc9efae.js.map",
+    "static/js/2.430cd1e1.chunk.js": "/week19employeeTracker/static/js/2.430cd1e1.chunk.js",
+    "static/js/2.430cd1e1.chunk.js.map": "/week19employeeTracker/static/js/2.430cd1e1.chunk.js.map",
+    "index.html": "/week19employeeTracker/index.html",
+    "precache-manifest.5710f40e0055e77aa2e1b176a650c11a.js": "/week19employeeTracker/precache-manifest.5710f40e0055e77aa2e1b176a650c11a.js",
+    "service-worker.js": "/week19employeeTracker/service-worker.js",
+    "static/css/main.20854d68.chunk.css.map": "/week19employeeTracker/static/css/main.20854d68.chunk.css.map",
+    "static/js/2.430cd1e1.chunk.js.LICENSE.txt": "/week19employeeTracker/static/js/2.430cd1e1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.49d6ea6f.js",
+    "static/js/runtime-main.9bc9efae.js",
     "static/js/2.430cd1e1.chunk.js",
     "static/css/main.20854d68.chunk.css",
     "static/js/main.fd280a25.chunk.js"
